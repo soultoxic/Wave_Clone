@@ -42,3 +42,7 @@ Here are some images
 <p align="center">
 <img src="https://media.discordapp.net/attachments/995229837386059816/1097483649772965949/image.png"/>
 </p>
+
+<p align="center">
+<img src="https://media.discordapp.net/attachments/995229837386059816/1097489596897566871/image.png?width=617&height=415"/>
+</p>
