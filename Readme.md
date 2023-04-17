@@ -34,7 +34,7 @@ node src/index.js
 
 ## 🔐 Licensed
 
-Distributed under the `MIT License`. See [`LICENSE`](https://github.com/soultoxic/Wave_Clone/blob/main/LICENCE) for more information.
+Distributed under the `MIT License`. See [`LICENSE`](https://github.com/soultoxic/Wave_Clone/blob/main/LICENCE) for more information. If i see anyone using code without credit be ready for **BAN**
 
 ## 📷 Images
 
