@@ -29,7 +29,7 @@ client.on("interactionCreate", async interaction => {
 
             const embed = new EmbedBuilder()
                 .setImage('https://cdn.discordapp.com/attachments/863024911143927819/1023949603244085298/20220926_185728.png')
-                .setColor("Blue")
+                .setColor("#FF3386")
 
             interaction.reply({
                 embeds: [embed],
@@ -48,13 +48,13 @@ client.on("interactionCreate", async interaction => {
             if (player.volume < 20) {
                 player.setVolume(10)
                 const embed = new EmbedBuilder()
-                    .setColor('Blue')
+                    .setColor('#FF3386')
                     .setDescription(`🔉 Volume has been set to **${player.volume}%**`);
                 interaction.reply({ embeds: [embed], ephemeral: true })
             } else {
                 player.setVolume(player.volume - 10);
                 const embed = new EmbedBuilder()
-                    .setColor('Blue')
+                    .setColor('#FF3386')
                     .setDescription(`🔉 Volume has been set to **${player.volume}%**`);
                 return interaction.reply({ embeds: [embed], ephemeral: true })
             }
@@ -72,13 +72,13 @@ client.on("interactionCreate", async interaction => {
             if (player.volume > 90) {
                 player.setVolume(100)
                 const embed = new EmbedBuilder()
-                    .setColor('Blue')
+                    .setColor('#FF3386')
                     .setDescription(`🔉 Volume has been set to **${player.volume}%**`);
                 interaction.reply({ embeds: [embed], ephemeral: true })
             } else {
                 player.setVolume(player.volume + 10);
                 const embed = new EmbedBuilder()
-                    .setColor('Blue')
+                    .setColor('#FF3386')
                     .setDescription(`🔊 Volume has been set to **${player.volume}%**`);
                 return interaction.reply({ embeds: [embed], ephemeral: true })
             }
@@ -96,7 +96,7 @@ client.on("interactionCreate", async interaction => {
                 player.pause(false);
                 const embed = new EmbedBuilder()
 
-                    .setColor('Blue')
+                    .setColor('#FF3386')
                     .setDescription('▶ The player has been resumed');
 
                 interaction.reply({ embeds: [embed] })
@@ -105,7 +105,7 @@ client.on("interactionCreate", async interaction => {
 
                 const embed = new EmbedBuilder()
 
-                    .setColor('Blue')
+                    .setColor('#FF3386')
                     .setDescription('⏸ The player has been paused');
 
                 interaction.reply({ embeds: [embed] })
@@ -123,7 +123,7 @@ client.on("interactionCreate", async interaction => {
             player.stop();
 
             const embed = new EmbedBuilder()
-                .setColor('Blue')
+                .setColor('#FF3386')
                 .setDescription('⏭ Skipped the current track');
 
             await interaction.reply({ embeds: [embed] })
@@ -141,7 +141,7 @@ client.on("interactionCreate", async interaction => {
 
             const embed = new EmbedBuilder()
                 .setDescription(`🔄 Switched to track loop mode`)
-                .setColor(`Blue`)
+                .setColor(`#FF3386`)
 
             interaction.reply({
                 embeds: [embed]
@@ -160,7 +160,7 @@ client.on("interactionCreate", async interaction => {
 
             const embed = new EmbedBuilder()
                 .setDescription(`🔄 Switched to queue loop mode`)
-                .setColor(`Blue`)
+                .setColor(`#FF3386`)
 
             interaction.reply({
                 embeds: [embed]
@@ -179,7 +179,7 @@ client.on("interactionCreate", async interaction => {
 
             const embed = new EmbedBuilder()
                 .setDescription('⭕ Loop has been disabled')
-                .setColor("Blue")
+                .setColor("#FF3386")
 
             interaction.reply({
                 embeds: [embed]

@@ -25,7 +25,7 @@ module.exports = {
 
     if (!player.currentTrack.info.isSeekable) {
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription('Track is not seekable');
 
       interaction.reply({
@@ -35,7 +35,7 @@ module.exports = {
       player.seekTo(position * 1000);
 
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription(`Seeked to ${position}`);
 
       return interaction.reply({

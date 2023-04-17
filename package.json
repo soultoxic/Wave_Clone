@@ -10,7 +10,7 @@
     "npm": "^8.19.1",
     "poru": "^3.4.0"
   },
-  "name": "lavalink-music-bot",
+  "name": "wave-music-bot",
   "version": "1.0.0",
   "main": "src/index.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "keywords": [
     "music-bot"
   ],
-  "author": "FlameFace#0570",
-  "license": "ISC",
+  "author": "SOULCOSMIC",
+  "license": "MIT",
   "description": ""
 }

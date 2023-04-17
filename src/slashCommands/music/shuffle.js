@@ -12,7 +12,7 @@ module.exports = {
 
     if (player.queue.length <= 2) {
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription("Can't shuffle the queue.");
       return interaction.reply({ embeds: [embed] });
     }
@@ -20,7 +20,7 @@ module.exports = {
     player.queue.shuffle();
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription('Shuffled the queue');
 
     return interaction.reply({

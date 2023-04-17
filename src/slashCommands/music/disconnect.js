@@ -12,7 +12,7 @@ module.exports = {
 
     player.destroy();
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription('📡 Disconnected the player');
 
     return interaction.reply({

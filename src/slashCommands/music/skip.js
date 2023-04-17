@@ -13,7 +13,7 @@ module.exports = {
     player.stop();
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription('Skipped the current track');
 
     interaction.reply({ embeds: [embed] });

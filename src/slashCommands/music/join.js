@@ -14,7 +14,7 @@ module.exports = {
     });
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription(`Joined ${interaction.member.voice.channel.toString()}`);
 
     return interaction.reply({

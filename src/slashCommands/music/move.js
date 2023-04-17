@@ -51,7 +51,7 @@ module.exports = {
     moveArrayElement(player.queue, from - 1, to - 1);
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription(`Moved ${moved.info.title} to \`${to}\`.`);
 
     return interaction.reply({

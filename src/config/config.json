@@ -1,17 +1,17 @@
 {
-    "TOKEN": "TOKEN-HERE",
-    "CLIENTID": "CLIENT-ID",
+    "TOKEN": "MTA5NzQzNTIzMzg4NTkwMDgxMQ.GPGqIW.UDy9bgoUWBE8NOxK2sUiTQTNN8RJLQT7noE4Ok",
+    "CLIENTID": "1097435233885900811",
     "OWNER": [
-        "OWNER-ID"
+        "991301778127732766"
     ],
     "NODES": [
         {
-            "name": "NODE-1",
-            "host": "node1.kartadharta.xyz",
-            "port": 443,
-            "password": "kdlavalink",
-            "secure": true
-        }
+            "name": "NODE_1",
+            "host": "dono-04.danbot.host",
+            "port": 1491,
+            "password": "youshallnotpass",
+            "secure": false
+          }
     ],
     "SPOTIFY": {
         "clientID": "cb41529dc3bd4d8f8a240dbee0fff4e8",

@@ -22,7 +22,7 @@ module.exports = {
 
     if (track > player.queue.length) {
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription('Track not found');
 
       return interaction.reply({ embeds: [embed] });
@@ -31,7 +31,7 @@ module.exports = {
     player.queue.remove(track - 1);
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription('Removed track from queue');
 
     return interaction.reply({ embeds: [embed] });

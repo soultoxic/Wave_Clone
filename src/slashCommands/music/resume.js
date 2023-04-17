@@ -13,7 +13,7 @@ module.exports = {
 
     if (!player.isPaused) {
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription('▶ The player is not paused');
 
       interaction.reply({
@@ -21,7 +21,7 @@ module.exports = {
       });
     } else {
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription('▶ The player has been resumed');
 
       player.pause(false);

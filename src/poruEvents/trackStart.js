@@ -39,21 +39,10 @@ module.exports.run = async (client, player, track) => {
     );
 
   const embed = new EmbedBuilder()
-    .setAuthor({
-      name: `Now Playing`,
-      iconURL: track.info.requester.displayAvatarURL(),
-    })
-    .setColor('Blue')
-    .setDescription(
-      `
-      **Track**: [${track.info.title}](${track.info.uri})
-      **Author**: ${track.info.author}
-      **Source**: ${capitalizeFirstLetter(`${track.info.sourceName}`)}
-      **Duration**: ${ms(track.info.length)}
-`,
-    )
-    .setImage(track.info.image);
+    .setAuthor({ name: `Now Playing` })
+    .setColor('#FF3386')
+    .setDescription(`[${track.info.title}](${track.info.uri}) [${interaction.member}]`);
 
   const channel = client.channels.cache.get(player.textChannel)
-  await channel?.send({ embeds: [embed], components: [row] })
+  await channel?.send({ embeds: [embed] })
 };

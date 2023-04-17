@@ -1,4 +1,3 @@
-require('./console/watermark')
 const { Client, Partials, Collection } = require('discord.js');
 const colors = require('colors');
 const config = require('./config/config.json')

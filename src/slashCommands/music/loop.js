@@ -30,7 +30,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setImage('https://cdn.discordapp.com/attachments/863024911143927819/1023949603244085298/20220926_185728.png')
-      .setColor("Blue")
+      .setColor("#FF3386")
 
     interaction.reply({
       embeds: [embed],

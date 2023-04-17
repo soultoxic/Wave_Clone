@@ -2,7 +2,7 @@ const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name: 'play',
-  description: 'play a track',
+  description: 'plays your fav track',
   inVc: true,
   sameVc: true,
   options: [
@@ -36,12 +36,12 @@ module.exports = {
       }
 
       const embed = new EmbedBuilder()
-        .setColor('Blue')
+        .setColor('#FF3386')
         .setDescription(
-          `☑ Added \`${tracks.length}\` tracks from ${playlistInfo.name}`,
+          `Queued \`${tracks.length}\` tracks from ${playlistInfo.name}`,
         );
 
-      await interaction.editReply({
+      await interaction?.editReply({
         embeds: [embed],
       });
       if (!player.isPlaying && !player.isPaused) return player.play();
@@ -52,8 +52,8 @@ module.exports = {
       player.queue.add(track);
 
       const embed = new EmbedBuilder()
-        .setColor('Blue')
-        .setDescription(`☑ Added [${track.info.title}](${track.info.uri})`);
+        .setColor('#FF3386')
+        .setDescription(`Queued [${track.info.title}](${track.info.uri}) [${interaction.member}]`);
 
       await interaction.editReply({
         embeds: [embed],

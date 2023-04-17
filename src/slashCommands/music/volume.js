@@ -24,7 +24,7 @@ module.exports = {
     player.setVolume(volume);
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setDescription(`Volume has been set to **${volume}%**.`);
 
     interaction.reply({

@@ -19,7 +19,7 @@ module.exports = {
       player.queue.length > 9 ? player.queue.slice(0, 9) : player.queue;
 
     const embed = new EmbedBuilder()
-      .setColor('Blue')
+      .setColor('#FF3386')
       .setTitle('Now Playing')
       .setThumbnail(player.currentTrack.info.image)
       .setDescription(
