@@ -15,7 +15,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setColor('#FF3386')
-      .setDescription(`Joined ${interaction.member.voice.channel.toString()}`);
+      .setDescription(`Successfully joinned ${interaction.member.voice.channel.toString()}`);
 
     return interaction.reply({
       embeds: [embed],
