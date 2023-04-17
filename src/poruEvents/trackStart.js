@@ -41,7 +41,7 @@ module.exports.run = async (client, player, track) => {
   const embed = new EmbedBuilder()
     .setAuthor({ name: `Now Playing` })
     .setColor('#FF3386')
-    .setDescription(`[${track.info.title}](${track.info.uri}) [${interaction.member}]`);
+    .setDescription(`[${track.info.title}](${track.info.uri}) [${track.info.requester}]`);
 
   const channel = client.channels.cache.get(player.textChannel)
   await channel?.send({ embeds: [embed] })
