@@ -51,9 +51,11 @@ module.exports = {
 
       player.queue.add(track);
 
+      const titles = track.info.title.length > 15 ? track.info.title.substr(0, 15) + "..." : track.info.title;
+
       const embed = new EmbedBuilder()
         .setColor('#FF3386')
-        .setDescription(`Queued [${track.info.title}](${track.info.uri}) [${interaction.member}]`);
+        .setDescription(`Queued [${titles}](${track.info.uri}) [${interaction.member}]`);
 
       await interaction.editReply({
         embeds: [embed],
