@@ -44,7 +44,7 @@ module.exports = {
                     track.info.requester = currentsong.requester;
                 }
 
-                await player.queue.add(res.tracks[Math.floor(Math.random() * res.tracks.length) ?? 1]);
+                await player.queue.add(res.tracks[Math.floor(Math.random() * res.tracks.length) ?? 10]);
 
                 const embed = new EmbedBuilder().setDescription(`Autoplay has been: \`Enabled\``).setColor('#FF3386');
 
