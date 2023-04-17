@@ -1,8 +1,8 @@
 const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
-  name: 'skip',
-  description: 'Lets you skip the current song',
+  name: 'stop',
+  description: 'stop the player and clears the queue',
   inVc: true,
   sameVc: true,
   player: true,
@@ -10,11 +10,11 @@ module.exports = {
     const player = client.poru.players.get(interaction.guild.id);
     if (interaction.user.id !== player.currentTrack.info.requester.id)
       return interaction.reply({ content: `You are not allowed to use this command now as the song is played by another user`, ephemeral: true });
-    player.stop();
+    player.destroy();
 
     const embed = new EmbedBuilder()
       .setColor('#FF3386')
-      .setDescription(':checkmark: | Current track has been: `\`\SKIPED\``.');
+      .setDescription(':checkmark: | Player has been: `\`\STOPED\``.');
 
     interaction.reply({ embeds: [embed] });
   },

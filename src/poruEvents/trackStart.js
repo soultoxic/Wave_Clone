@@ -38,7 +38,7 @@ module.exports.run = async (client, player, track) => {
         .setStyle(ButtonStyle.Secondary),
     );
 
-    const titles = track.info.title.length > 15 ? track.info.title.substr(0, 15) + "..." : track.info.title;
+    const titles = track.info.title.length > 30 ? track.info.title.substr(0, 30) + "..." : track.info.title;
 
   const embed = new EmbedBuilder()
     .setAuthor({ name: `Now Playing` })

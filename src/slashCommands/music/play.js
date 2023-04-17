@@ -2,14 +2,14 @@ const { ApplicationCommandOptionType, EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name: 'play',
-  description: 'plays your fav track',
+  description: 'Loads and plays playlists/track from search query',
   inVc: true,
   sameVc: true,
   options: [
     {
       name: 'query',
       type: ApplicationCommandOptionType.String,
-      description: 'The track which you want to play',
+      description: 'song name/url to play',
       required: true,
       autocomplete: true
     },
@@ -51,7 +51,7 @@ module.exports = {
 
       player.queue.add(track);
 
-      const titles = track.info.title.length > 15 ? track.info.title.substr(0, 15) + "..." : track.info.title;
+      const titles = track.info.title.length > 30 ? track.info.title.substr(0, 30) + "..." : track.info.title;
 
       const embed = new EmbedBuilder()
         .setColor('#FF3386')
