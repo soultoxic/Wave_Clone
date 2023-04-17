@@ -13,7 +13,7 @@ client.once('ready', async () => {
     console.log("----------------------------------------".white);
 
     setInterval(() => {
-        const statuses = [`Music`];
+        const statuses = [`Music`, `Soul Devs`, `?play`];
         const status = statuses[Math.floor(Math.random() * statuses.length)];
         client.user.setActivity(status, { type: ActivityType.Listening });
     }, 60000);
