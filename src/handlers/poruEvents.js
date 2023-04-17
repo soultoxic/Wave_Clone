@@ -23,7 +23,7 @@ module.exports = (client) => {
 
             client.poru.on(pull.event, pull.run.bind(null, client));
 
-            console.log(`[HANDLER - MUSIC] Loaded a file : ${file}`.#FF3386)
+            console.log(`[HANDLER - MUSIC] Loaded a file : ${file}`.blue)
         } catch (err) {
             console.log(`[HANDLER - MUSIC] Error while loading poru event: ${file}`.red);
             console.log(err)
