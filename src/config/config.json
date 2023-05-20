@@ -1,0 +1,20 @@
+{
+    "TOKEN": " ",
+    "CLIENTID": " ",
+    "OWNER": [
+        " "
+    ],
+    "NODES": [
+        {
+            "name": "NODE_1",
+            "host": "lava.link",
+            "port": 80,
+            "password": "souldevs",
+            "secure": false
+          }
+    ],
+    "SPOTIFY": {
+        "clientID": " ",
+        "clientSecret": " "
+    }
+}
